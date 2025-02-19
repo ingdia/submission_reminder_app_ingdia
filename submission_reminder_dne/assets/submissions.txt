@@ -1,0 +1,11 @@
+Student Name, Assignment, Status
+Gitangaza Bernyce, Shell Navigation, not submitted
+Bella Calmine, Shell Navigation, submitted
+Bonae Ineza, Shell Navigation, not submitted
+Dushime Benita, Shell Navigation, submitted
+Duhoze Benoite, Shell Navigation, not submitted
+Jane Doe, Shell Navigation, not submitted
+John Smith, Shell Navigation, submitted
+Alice Green, Shell Navigation, not submitted
+Bob Brown, Shell Navigation, submitted
+Charlie White, Shell Navigation, not submitted
