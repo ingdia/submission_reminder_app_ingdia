@@ -4,13 +4,19 @@ read name
 parent_dir="submission_reminder_${name}"
 #craeting the parent directory
 mkdir -p  "$parent_dir"/{app,modules,assets,config}
+echo "done with creating directory $parent_dir"
+echo "done with creating subdirectories" 
+
 #creating files to their corresponding directory
 touch "$parent_dir"/config/config.env
 touch "$parent_dir"/app/reminder.sh
 touch "$parent_dir"/modules/functions.sh
 touch "$parent_dir"/startup.sh
 touch "$parent_dir"/assets/submissions.txt
+
+echo "done with creating all necessary file and are i their respective directory"
 #details for config.env
+
 echo 'ASSIGNMENT="Shell Navigation"
 DAYS_REMAINING=2' > "$parent_dir/config/config.env"
 # script for reminder
@@ -70,7 +76,16 @@ echo "Chinemerem, Shell Navigation, not submitted" >> "$parent_dir/assets/submis
 echo "Chiagoziem, Git, submitted" >> "$parent_dir/assets/submissions.txt"
 echo "Divine, Shell Navigation, not submitted" >> "$parent_dir/assets/submissions.txt"
 echo "Anissa, Shell Basics, submitted" >> "$parent_dir/assets/submissions.txt"
+echo "Sheilla,Git, submitted" > "$parent_dir/assets/submissions.txt"
+echo "Claude, Shell Navigation, not submitted" >> "$parent_dir/assets/submissions.txt"
+echo "Chantal, Git, submitted" >> "$parent_dir/assets/submissions.txt"
+echo "Denyse, Shell Navigation, not submitted" >> "$parent_dir/assets/submissions.txt"
+echo "Alice, Shell Basics, submitted" >> "$parent_dir/assets/submissions.txt"
+ 
+echo "added new peoples in submisssion"
+echo "created: config.env, reminder.sh ,functions.sh,submissions.sh"
 #execusion of reminder
+echo "starting startup.sh"
 echo '#!/bin/bash
 
 cd "$(dirname "$0")"
@@ -81,5 +96,6 @@ echo "executed successfully!"' > "$parent_dir/startup.sh"
 chmod +x "$parent_dir/app/reminder.sh"
 chmod +x "$parent_dir/modules/functions.sh"
 chmod +x "$parent_dir/startup.sh"
+echo "Environment is now setup"
 
 
